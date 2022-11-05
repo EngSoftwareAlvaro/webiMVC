@@ -34,10 +34,6 @@ $icons = array("create" => "Editor", "done" => "Respondida", "remove_red_eye" =>
                         <input name="pergunta" id="pergunta" type="text" class="validate">
                         <label for="pergunta">Pergunta</label>
                     </div>
-                    <!-- <div class="input-field col m4 s12">
-                        <input name="usuario_id" id="usuario_id" type="text" class="validate">
-                        <label for="usuario_id">Usuário ID</label>
-                    </div> -->
                     <div class="input-field col m4 s12">
                         <select id="selectStatus" name="statusPergunta">
                             <option value="" disabled selected>Selecione o Status</option>

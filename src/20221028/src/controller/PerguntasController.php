@@ -4,9 +4,9 @@ namespace App\Model;
 
 require_once 'model/Perguntas.php';
 
-class PerguntaController{
+class PerguntasController{
     public function exibir(){
-        $pergunta = new Pergunta();
+        $pergunta = new Perguntas();
 
         $_REQUEST['perguntas'] =  $pergunta->ler();
 

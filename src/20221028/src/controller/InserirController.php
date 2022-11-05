@@ -7,8 +7,8 @@ require_once "../model/Perguntas.php";
 
 $pergunta = new Perguntas();
 
-$pergunta->setNome($_POST["nome"]);
-$pergunta->setStatus($_POST["statusUsuario"]);
+$pergunta->setPergunta($_POST["pergunta"]);
+$pergunta->setStatus($_POST["statusPergunta"]);
 
 
-$usuario->criar();
+$pergunta->criar();

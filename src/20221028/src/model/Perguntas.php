@@ -14,12 +14,12 @@ class Perguntas{
     function __construct(
         $pergunta = null,
         $status = null,
-        
+        $usuario_id = 2
     ) {
         $this->id = null;
         $this->setPergunta($pergunta);
         $this->setStatus($status);
-        
+        $this->setUsuario_Id($usuario_id);
 
         $this->conexao = Conexao::getInstancia();
     }
@@ -30,19 +30,9 @@ class Perguntas{
     public function setPergunta($pergunta){
         $this->pergunta = $pergunta;
     }
-    public function getPergunta($id)
+    public function getPergunta()
     {
-        $result = $this->ler($id);
-        if (empty($result))
-            return 0;
-
-        $result = $result[0];
-
-        $this->id = $id;
-        $this->setPergunta($result["pergunta"]);
-        $this->setStatus($result["status"]);
-        
-        return $this;
+        return $this->pergunta;
     }
     public function setStatus($status){
         $this->status = $status;
@@ -51,7 +41,13 @@ class Perguntas{
     {
         return $this->status;
     }
-    
+    public function setUsuario_Id($usuario_id){
+        $this->usuario_id = $usuario_id;
+    }
+    public function getUsuario_Id()
+    {
+        return $this->usuario_id;
+    }
 
     public function criar()
     {
@@ -96,7 +92,8 @@ class Perguntas{
         if ($this->id == null)
             return false;
 
-            $query = "UPDATE perguntas SET pergunta= '" . $this->pergunta . "', status= '" . $this->status . "', usuario_id= '" . $this->usuarioid . "', modified= '" . date(DATE_ATOM) . "' WHERE id= '" . $this->id . "'";
+        $query = "UPDATE perguntas SET pergunta= '" . $this->pergunta . "', status= '" . $this->status . "', usuario= '" . $this->usuario_id . "', modified= '" . date(DATE_ATOM) . "' WHERE id= '" . $this->id . "'";
+
         $result = pg_query($query);
 
         return $result;
@@ -118,3 +115,4 @@ class Perguntas{
     }
 
 }
+
