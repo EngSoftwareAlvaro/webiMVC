@@ -14,7 +14,7 @@ class Perguntas{
     function __construct(
         $pergunta = null,
         $status = null,
-        $usuario_id = 2
+        $usuario_id = 4
     ) {
         $this->id = null;
         $this->setPergunta($pergunta);

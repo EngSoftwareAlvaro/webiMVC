@@ -45,7 +45,7 @@ $icons = array("create" => "Editor", "done" => "Respondida", "remove_red_eye" =>
                     <br><br><br><br><br><br><br><br><br><br><br><br>
                     <div class="col s12 right-align">
                         <a class="waves-effect waves-light btn light-blue lighten-1 btnSubmit" id="btnSubmitPergunta" data-form="formPergunta">Enviar</a>
-                    </div>
+                    </div> 
                 </form>
             </div>
         </div>
