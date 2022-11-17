@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Tests\\PerguntaTest::testInterrogacao":3,"Tests\\PerguntaTest::testGetPergunta":4,"Tests\\PerguntaTest::testUsuario":3},"times":{"Tests\\PerguntaTest::testInterrogacao":0.172,"Tests\\PerguntaTest::testGetPergunta":0.022,"Tests\\PerguntaTest::testUsuario":0.233}}
+{"version":1,"defects":{"Tests\\PerguntaTest::testInterrogacao":3,"Tests\\PerguntaTest::testGetPergunta":4,"Tests\\PerguntaTest::testUsuario":3},"times":{"Tests\\PerguntaTest::testInterrogacao":0.318,"Tests\\PerguntaTest::testGetPergunta":0.022,"Tests\\PerguntaTest::testUsuario":0.233}}
